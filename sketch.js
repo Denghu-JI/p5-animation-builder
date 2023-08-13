@@ -7,15 +7,6 @@ let y3 = 0
 let x4 = 0
 let y4 = 0
 
-
-//monster pos
-let monsterX = 800
-let monsterX2 = 800
-let monsterX3 = 800
-let m1 = 1
-let m2 = 0
-let m3 = 0
-
 //warning parameters
 let warningCount = 100
 let warningFadeout = 100
@@ -31,14 +22,11 @@ let lightningFadeOutStep = lightWeight/lightningFadeOut
 
 
 function setup() {
-  // create the canvas (800px wide, 600px high)
   createCanvas(800, 800);
 }
 
 function draw() {
   movieBackground(20)
-  // monster(0,0)
-  monsterAnimation(3, 5, 10)
   warningAnimation()
   titleAnimation()
   lightningAnimation()
@@ -121,7 +109,7 @@ function title(c1,c2) {
   textSize(32);
   strokeWeight(1);
   textAlign(CENTER, TOP);
-  text("Monster", 0, 300,970)
+  text("Franko", 0, 300,970)
 }
 
 function lightning() {
